@@ -1,0 +1,61 @@
+<ng:include src="'partials/header.html'"></ng:include>
+<div style="background-color:#909045">
+<div class="row" xmlns:ng="http://angularjs.org">
+
+    <form id="slideForm" class="form-horizontal col-md-12" ng-submit="saveVideo()">
+        <fieldset>
+            <legend>Video Details</legend>
+            <br/>
+                <div class="row">
+                    <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="videoId" class="col-md-4 control-label">Id:</label>
+
+                        <div class="col-md-8">
+                            <input id="videoId" name="videoId" class="form-control" ng-model="video._id" type="text" disabled/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name" class="col-md-4 control-label">Name:</label>
+
+                        <div class="col-md-8">
+                            <input type="text" id="slideName" class="form-control" name="videoName"  ng-model="video.name" required autofocus/>
+                            <span class="help-inline"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description" class="col-md-4 control-label">Description:</label>
+
+                        <div class="col-md-8">
+                            <textarea id="videoDescription" name="videoDescription" class="form-control" ng-model="video.description"  rows="6"></textarea>
+                        </div>
+                    </div>
+                   </div>                                                                                             
+                <div class="col-md-8">
+                    <div class="well" style="width: 180px;text-align: center;width:50%;margin: 0px auto;">
+                        
+                        <p style="color:#999;">Best resolution for Landscape mode is 1024(width) x 768(height), and 768(width) x 1024(height) for Portrait mode. To change the picture, click at the button below.</p>
+ <input ng-model="files" onchange="angular.element(this).scope().file_changed(this)" type="file" accept="video/*" />
+<output id="list"></output>
+                    </div>
+                    <br>
+                    <div class="row status-bar">
+                        <div class="col-md-12">
+                            <div class="alert alert-success hide" show-alert>
+                                <b>Success!</b> Slide saved successfully
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+       </fieldset>
+        <div class="form-actions">
+            &nbsp;&nbsp;&nbsp;<button type="submit" class="btn btn-primary save">Save</button>
+            &nbsp;&nbsp;&nbsp;<a href="#/videoshow/edit" class="btn btn-warning" role="button">Cancel</a>
+            &nbsp;&nbsp;&nbsp;<a href="#/videoshow/edit" class="btn btn-danger delete" ng:click="deleteVideo(video)" ng-show="video._id!=undefined">Delete</a>
+        </div>
+    </form>
+</div>
+</div>

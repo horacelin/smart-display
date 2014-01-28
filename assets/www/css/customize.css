@@ -1,0 +1,300 @@
+@import url(http://fonts.googleapis.com/css?family=Krona+One|Krona+One);
+.main_font,h1,h2,h3,h4,h5,h6,.header_reservation,.page_title_text,.widget_title,.post-meta-published,a.readmore,.wp-pagenavi,.food-menu-widget-title-text,.food-menu-widget-price-text,.food_menu_sticky nav li a, #isotope-filter ul li a, .flex-title ,ul.nav-tabs.nav li a, .accordion-heading, .pullquote, blockquote p, .ui-datepicker .ui-datepicker-title { font-family: 'Krona One'; font-weight:normal; }
+body{ font-family: 'Arial'; font-size:13px; } 
+.sidebar .AT_opening_hours_widget ul.opening_hours_list, #respond p.form-allowed-tags{ font-size:11px; } 
+.widget_search #s, .recent-post-title, .comment-edit-link, .comment-reply-link, .tagcloud a, #reservation_me ol.forms li label, #contact_me ol.forms li label,  span.reservationerror, .tweet-time{  font-size:12px !important; } 
+table#wp-calendar caption {  font-size:14px; } 
+.single-post-date-text, .single-post-comment-text, .post-meta-month{  font-size:15px; } 
+.AT_stunning_text_widget .home-stunning-text-button , .food_menu_text_price.single_price, .food_menu_price_number, .food_menu_small_image_name, .food_menu_small_image_price.single_price, .food_menu_text_name{ font-size:16px; } 
+.main_menu .nav li a{ font-family: 'Krona One'; font-size:13px; }
+@media (min-width: 768px) and (max-width: 979px){.main_menu .nav li a{ font-size:11px; }
+}.header_logo{ top:15px; }
+.header_mainmenu.logo_above_menu .header_logo{ left:0px; }
+.header{ height:120px; }
+@media (max-width: 767px) {.header_logo{ margin:20px auto; }
+}@media (max-width: 480px) {.header_logo{ margin:15px auto; }
+}.header_mainmenu.logo_overlap_menu_center .sf-menu.menu_left{ margin-right:0px; }
+.header_mainmenu.logo_overlap_menu_center .sf-menu.menu_right{ margin-left:0px; }
+.header_mainmenu.logo_overlap_menu_center .sf-menu.menu_right{ width:470px; }
+@media (min-width: 768px) and (max-width: 979px){.header_mainmenu.logo_overlap_menu_center .sf-menu.menu_left{ margin-right:0px; }
+.header_mainmenu.logo_overlap_menu_center .sf-menu.menu_right{ margin-left:0px; }
+.header_mainmenu.logo_overlap_menu_center .sf-menu.menu_right{ width:357.2px; }
+.header_mainmenu.logo_overlap_menu_center .header_logo img{ width:298.08px; }
+}.header_mainmenu{ background-color:#e4e1d6;}
+.header_mainmenu{ background-image:url(http://demo.andthemes.com/dine-and-drink-2/wp-content/themes/dine-and-drink/images/img.png);}
+.header_mainmenu{ background-position:left top; }
+.header_social_icon{ background-color:#4b4b4b; }
+.header_social_icon i{ color:#e4e1d6; }
+.main_menu{ border-top-color:#b5b2a8;}
+.main_menu{ background-color:#e4e1d6;}
+.sf-menu a{ color:#4b4b4b; }
+.sf-menu a:hover, .sf-menu li.current-menu-item a{ color:#ee7147 }
+.sf-menu li ul.sub-menu li a,
+			#touch-menu,
+			.main_menu_dropdown ul.responsive_menu li a,
+			.main_menu_dropdown ul.sub-menu li a
+			{ color:#e4e1d6 !important; }
+.sf-menu li ul.sub-menu li:hover a, .sf-menu li ul.sub-menu li a:hover, .sf-menu li ul.sub-menu li.current-menu-item a,
+		#touch-menu:hover,
+		.main_menu_dropdown ul.responsive_menu li a:hover,
+		.main_menu_dropdown ul.responsive_menu li:hover > a,
+		.main_menu_dropdown ul.sub-menu li a:hover,
+		.main_menu_dropdown ul.sub-menu li:hover > a
+		{ color:#ef7147 !important; }
+.sf-menu li ul.sub-menu li:hover , .sf-menu li ul.sub-menu li.current-menu-item,
+		.main_menu_dropdown ul.responsive_menu li a:hover,
+		.main_menu_dropdown ul.responsive_menu li:hover > a,
+		.main_menu_dropdown ul.sub-menu li a:hover,
+		.main_menu_dropdown ul.sub-menu li:hover > a
+		{ border-left-color:#ef7147; }
+.sf-menu li ul.sub-menu li ul.sub-menu li a{ color:#e4e1d6 !important; }
+.sf-menu li ul.sub-menu li ul.sub-menu li:hover a, .sf-menu li ul.sub-menu li ul.sub-menu li a:hover,
+		.sf-menu li ul.sub-menu li ul.sub-menu li.current-menu-item a
+		{ color:#ef7147 !important; }
+.sf-menu li li li:hover , .sf-menu li.current-menu-item {border-left-color:#ef7147; }
+.sf-menu li li{ background-color:rgba(31,31,31,0.8); }
+.main_menu_dropdown .mobile-menu, 
+		.main_menu_dropdown .mobile-menu:hover,
+		.main_menu_dropdown .responsive_menu li a,
+		.main_menu_dropdown .responsive_menu li a:hover,
+		.main_menu_dropdown .sub-menu li a,
+		.main_menu_dropdown .sub-menu li a:hover
+		{ background-color:#1f1f1f; }
+.main_menu_dropdown ul.responsive_menu li a,
+		.main_menu_dropdown ul.sub-menu li a{ border-left-color:#1f1f1f; }
+body, .home_slider_container{ background-color:#313131;}
+.sf-menu li.current-menu-item a:after, .main_menu_dropdown:after{ border-bottom-color:#313131;}
+body{ background-image:url(http://demo.andthemes.com/dine-and-drink-2/wp-content/uploads/2013/05/bg-spaketti1.jpg);}
+body{ background-position:left top; }
+body{ background-repeat:repeat; }
+.page_title_ribbon{ background-color:#ef7147;  } 
+.page_title_ribbon:after { border-left-color: #ef7147; border-right-color: #ef7147; }
+.page_title_ribbon i{ color:#fffefe; }
+h1.page_title_text, .comments_wrap h3.widget_title_text, .respond_wrap h3.widget_title_text, .home_widgets h3.widget_title_text, #reply-title .widget_title_text
+		{ color:#ef7147; }
+.page_title_container, .sidebar .widget_title, .food_menu_recommended, .widget_title, .home_widgets .widget, .wp-pagenavi a, .wp-pagenavi span, .divider.gallery-divider{ 
+		border-color:#1b1b1b !important; }
+.wp-pagenavi a, .wp-pagenavi span{ 
+		color:#ffffff; }
+.wp-pagenavi a:hover, .wp-pagenavi span:hover, .wp-pagenavi span.current{ 
+		color:#1e1e1e; }
+.wp-pagenavi a, .wp-pagenavi span{ background-color:#ef7147; } .wp-pagenavi a:first-child:before, .wp-pagenavi span:first-child:before{ border-right-color: #ef7147;  } .wp-pagenavi a:last-child:after, .wp-pagenavi span:last-child:after{  border-left-color: #ef7147;  }
+.wp-pagenavi a:hover, .wp-pagenavi span:hover, .wp-pagenavi span.current { 
+		background-color:#f2bc47; } 
+		.wp-pagenavi a:first-child:hover:before, .wp-pagenavi span:first-child:hover:before, span:first-child:before, span.current:before, span.current:after, span.current:first-child:before{   
+		border-right-color: #f2bc47;  } 
+		.wp-pagenavi a:last-child:hover:after, .wp-pagenavi a.current:last-child:after, .wp-pagenavi span.current:last-child:after{  
+		border-left-color: #f2bc47;  } 
+.sidebar .widget_title_ribbon, .sidebar .food-menu-widget-badge-icon, .sidebar .widget_search .input-append .add-on, .sidebar .food-menu-widget-money, .sidebar .teaser_icon_title{ background-color: #ef7147; } .sidebar .widget_title_ribbon:after, .sidebar .food-menu-widget-badge-icon:before{     border-left-color: #ef7147; border-right-color: #ef7147; } .sidebar .food-menu-widget-money:after {  border-left-color: #ef7147; } .sidebar .widget_search .input-append .add-on:before{  border-right-color: #ef7147; }
+.sidebar i{ color:#ffffff; }
+.sidebar .widget_title_text{ color:#ef7147; }
+.post, .type-menu, .type-gallery, .type-attachment, .entry-content-inner, .home_widgets .widget ul, .sidebar .widget ul, .tagcloud a, .home-special-boxes, .home-stunning-text-area, .AT_home_food_widget .home-food-wrap, .home-gallery-wrap, .home_widgets .food-menu-widget, .sidebar .food-menu-widget, .food-menu-widget, .home_widgets .recent-post, .sidebar .recent-post, .comment-box, #commentform, .home_widgets .textwidget, .sidebar .textwidget,  .home_widgets table#wp-calendar td, .sidebar table#wp-calendar td, .home_widgets table#wp-calendar tfoot tr td, .sidebar table#wp-calendar tfoot tr td, .food_menu_small_image_wrap, .food_menu_text_wrap,  .single-food-menu-wrapper, .page-fullwidth .entry-content-inner, .food_menu_sticky nav, .food_menu_recommended .food-menu-widget-title, .widget_search #s, .flex-caption, .span12.page-fullwidth-gallery, .isotope-food .food-menu-title-and-price, #isotope-filter, .food-menu-widget-price, .food-menu-widget-overlay, .no_comments_wrap, .home_widgets .twitter-wrap, .sidebar .twitter-wrap
+		{ background-color:#1e1e1e; } 
+.home-stunning-text-area, .AT_fourboxes_widget .teaser_box
+        { background-color:rgba(32,31,31,0.57); } 
+.flex-caption{ background-color:rgba(30,30,30,0.8); }
+.post-media:after, .single-food-menu-content:before, .food-menu-widget-thumbnail:after, .gallery_image:after{ 
+		border-top-color:#1e1e1e; 
+		border-bottom-color:#1e1e1e; }
+.tagcloud a:hover, .comment-edit-link, .comment-reply-link, .comment-edit-link:hover, .comment-reply-link:hover, .home_widgets table#wp-calendar caption, .sidebar table#wp-calendar caption, .home_widgets table#wp-calendar thead tr th, .sidebar table#wp-calendar thead tr th, .header_reservation a, .header_reservation:hover a, a.home-stunning-text-button.button, a.home-stunning-text-button.button:hover, .nav-tabs > .active > a, .nav-tabs > .active > a:hover, .nav-tabs > .active > a:focus,  #respond .form-submit #submit, .contact-submit ,input[type='submit'], table th, .ui-datepicker-title , .ui-datepicker td span, .ui-datepicker td a,   .ui-datepicker-next:hover , .ui-datepicker-prev:hover , .ui-datepicker-next , .ui-datepicker-prev { 	
+		color:#1e1e1e; } 
+.tagcloud a:after { 
+		border-left-color: #1e1e1e;  }
+.home_widgets .recent-post-thumbnail:after, .sidebar .recent-post-thumbnail:after, .comment-content:before, .food_menu_small_image_thumbnail:after{ 	border-right-color:#1e1e1e; 	 }
+.food_menu_sticky nav li a, .food_menu_sticky nav li a:hover, #isotope-filter ul li a, .home_widgets .twitter-wrap:after, .sidebar .twitter-wrap:after { 	border-top-color: #1e1e1e;  }
+.isotope-food .food-menu-widget-title:before, .food-menu-widget-recommended .food-menu-widget-title:before{ 	border-bottom-color: #1e1e1e;  }
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active { 	border-color: #1e1e1e;  }
+.post, .home_widgets .food-menu-widget, .sidebar .food-menu-widget, .home_widgets .recent-post, .sidebar .recent-post, .sidebar .widget ul, .home_widgets .textwidget, .sidebar .textwidget, .home_widgets #calendar_wrap, .sidebar .#calendar_wrap, .home-special-boxes, .home-stunning-text-area, .home-food-wrap, .home-gallery-wrap, .home_widgets .widget ul, .sidebar .widget ul, .home_widgets .AT_fourboxes_widget .teaser_box, .sidebar .AT_fourboxes_widget .teaser_box, .comment-box, #commentform, .food-menu-widget-recommended, .food_menu_text_wrap, .food_menu_small_image_wrap, .single-food-menu-wrapper, .span12.page-fullwidth-gallery,  textarea:focus, input[type='text']:focus, input[type='password']:focus, input[type='datetime']:focus, input[type='datetime-local']:focus, input[type='date']:focus, input[type='month']:focus, input[type='time']:focus, input[type='week']:focus, input[type='number']:focus, input[type='email']:focus, input[type='url']:focus, input[type='search']:focus, input[type='tel']:focus, input[type='color']:focus, .uneditable-input:focus, .no_comments_wrap, .food_menu_sticky, .isotope-food,  .entry-content-inner,
+			.home_widgets .twitter-wrap, .sidebar .twitter-wrap{ 	
+		-webkit-box-shadow:none; 
+		-moz-box-shadow:none; 
+		-ms-box-shadow:none; 	
+		-o-box-shadow:none; 
+		box-shadow:none; }
+.post-meta-published, h1, h2, h3, h4, h5, h6, h3.food_menu_catagory_name, .food_menu_text_price, .food_menu_small_image_price, .single-food-menu-excerpt, .single-post-date-text, h3.widget_title_text, .food-menu-widget-price-text, .teaser_icon_title, #respond code, .food-menu-widget-title-text, .pullquote_wrapper, blockquote , .home_widgets .AT_boxes_widget h3.widget_title_text, .home-food-badge-text.food-menu-widget-title-text { 	color:#ef7147; }
+h3.food_menu_catagory_name, .post-meta-published,  h2.single-food-menu-title, h2.post-content-title, .AT_home_food_widget h3.home-food-title, .sticky .post-media, .sticky{ 	border-color:#ef7147; }
+
+.widget_title_ribbon, .food-menu-widget-badge-icon, .single-food-menu-badge-icon, .widget_search .input-append .add-on, .food-menu-widget-money, .single-food-menu-money, .colorbox-icon, table#wp-calendar caption, .widget_title_ribbon_twelve_point_star, .widget_title_ribbon_twelve_point_star:before, .widget_title_ribbon_twelve_point_star:after, li.single_social_icon {
+			background-color:#ef7147; }
+.widget_title_ribbon:after, .food-menu-widget-badge-icon:before, .single-food-menu-badge-icon:before {     border-left-color:#ef7147; 	border-right-color:#ef7147; }
+.food-menu-widget-money:after, .single-food-menu-money:after, .colorbox-icon:after, .pullquote_wrapper, blockquote{  	border-left-color: #ef7147; }
+.widget_search .input-append .add-on:before, .pullquote_wrapper.right { 	border-right-color:#ef7147; }
+.AT_boxes_widget .widget_title_ribbon_style2:after{ 	border-top-color:#ef7147; }
+.home_widgets i, .content i{ color:#ffffff; }
+.food-menu-widget-overlay .food-menu-widget-bghover, .gallery_image, .food-menu-widget-thumbnail, .recent-post-thumbnail, .post-media, .home-gallery-image, .widget_flickr .flickr_badge_image, .food_menu_small_image_thumbnail{ 	 }
+.home-food-badge, .home_widgets .widget ul li, .sidebar .widget ul li, .food-menu-widget-title, .gallery_wrap, .gallery_row, .food_menu_sticky nav, .single-food-menu-price, .single-food-menu-badge, .single-food-menu-content, .single-post-date-comment, .post-category-and-tag, .food_menu_text_left, .comment-content, .food-menu-widget-recommended:hover, .food-menu-widget-price, .food_menu_small_image, .home-food-price, .food-menu-widget-recommended .food-menu-widget-price, table, table tr, table tr td, table tr th, .tweet-container{ 	
+		border-color:#323232; }
+.gallery-item img{ 	
+		border-color:#323232!important; }
+body, .widget_search #s, .required-star{ color:#e4e1d6; }
+a, .home_widgets .widget ul li a i, .sidebar .widget ul li a i, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .food_menu_sticky nav li a, .food_menu_text_name, 
+		i.at-loading, .flex-title, h4.toggle i.icon-plus-sign, h4.toggle i.icon-minus-sign, .food_menu_text_price, .food_menu_small_image_price, .food-menu-widget-title-text ,.home-food-title, .food_menu_small_image_name, .post-tag-list, .post-category-list, .single-post-comment-text, #reservation_me ol.forms li label, #contact_me ol.forms li label, span.reservationerror{
+			color:#ef7147; }
+.header_reservation a, .comment-edit-link, .comment-reply-link, .home_widgets table#wp-calendar thead tr th, .sidebar table#wp-calendar thead tr th, #respond .form-submit #submit, .contact-submit, input[type='submit'], a.button, .AT_fourboxes_widget .teaser_icon_title, .flex-control-paging a, .sc_slider_wrapper .flex-direction-nav a, table th, .ui-datepicker ,.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+			 background:#ef7147!important; }
+.header_reservation .header_reservation_triangle{ 
+		background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, #ef7147), color-stop(.25, transparent), to(transparent)),
+							  -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, #ef7147), color-stop(.25, transparent), to(transparent)),
+							  -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.75, transparent), color-stop(.75, #ef7147)),
+			  				  -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.75, transparent), color-stop(.75, #ef7147));
+			background-image: -webkit-linear-gradient(45deg, #ef7147 25%, transparent 25%, transparent),
+							  -webkit-linear-gradient(-45deg, #ef7147 25%, transparent 25%, transparent),
+							  -webkit-linear-gradient(45deg, transparent 75%, #ef7147 75%),
+			  				  -webkit-linear-gradient(-45deg, transparent 75%, #ef7147 75%);
+			background-image: -moz-linear-gradient(45deg, #ef7147 25%, transparent 25%, transparent),
+							  -moz-linear-gradient(-45deg, #ef7147 25%, transparent 25%, transparent),
+							  -moz-linear-gradient(45deg, transparent 75%, #ef7147 75%),
+			  				  -moz-linear-gradient(-45deg, transparent 75%, #ef7147 75%);
+			background-image: -ms-linear-gradient(45deg, #ef7147 25%, transparent 25%, transparent),
+							  -ms-linear-gradient(-45deg, #ef7147 25%, transparent 25%, transparent),
+							  -ms-linear-gradient(45deg, transparent 75%, #ef7147 75%),
+			  				  -ms-linear-gradient(-45deg, transparent 75%, #ef7147 75%);
+			background-image: -o-linear-gradient(45deg, #ef7147 25%, transparent 25%, transparent),
+							  -o-linear-gradient(-45deg, #ef7147 25%, transparent 25%, transparent),
+							  -o-linear-gradient(45deg, transparent 75%, #ef7147 75%),
+			  				  -o-linear-gradient(-45deg, transparent 75%, #ef7147 75%);
+			background-image: linear-gradient(45deg, #ef7147 25%, transparent 25%, transparent),
+							  linear-gradient(-45deg, #ef7147 25%, transparent 25%, transparent),
+							  linear-gradient(45deg, transparent 75%, #ef7147 75%),
+			  				  linear-gradient(-45deg, transparent 75%, #ef7147 75%);  } 
+.home-special-boxes-post-title-text, .accordion-inner, .accordion-group, h2.gallery-title, .ui-datepicker-calendar tr th, .ui-datepicker-calendar tr td, .ui-datepicker-calendar{ 	
+		border-color:#ef7147;	 } 
+textarea:focus, input[type='text']:focus, input[type='password']:focus, input[type='datetime']:focus, input[type='datetime-local']:focus, input[type='date']:focus, input[type='month']:focus, input[type='time']:focus, input[type='week']:focus, input[type='number']:focus, input[type='email']:focus, input[type='url']:focus, input[type='search']:focus, input[type='tel']:focus, input[type='color']:focus, .uneditable-input:focus{ box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(239,113,71,0.5) inset; 
+		border-color: rgba(239,113,71,0.2);
+		}
+a:hover, a:focus, .home_widgets .widget ul li a:hover i, .sidebar .widget ul li a:hover i, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .food_menu_sticky nav li a:hover, .food_menu_sticky nav li a.selected , h3.toggle:hover i.icon-plus-sign, h3.toggle:hover i.icon-minus-sign ,#isotope-filter ul li a.active, #isotope-filter ul li a.active:hover{ 	
+		color:#f2bc47; }
+.tagcloud a:hover, .header_reservation:hover a, .comment-edit-link:hover, .comment-reply-link:hover, #respond .form-submit #submit:hover, .contact-submit:hover, input[type='submit']:hover, a.button:hover, .AT_boxes_widget .teaser_icon_title:hover, .nav-tabs > .active > a, .nav-tabs > .active > a:hover, .nav-tabs > .active > a:focus, .flex-control-paging a.flex-active, .flex-control-paging a:hover, .teaser_icon_title:hover ,.sc_slider_wrapper .flex-direction-nav a:hover, .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus, .ui-datepicker-header{ 	
+		background-color:#f2bc47!important; }
+.header_reservation:hover .header_reservation_triangle{ 
+		background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, #f2bc47), color-stop(.25, transparent), to(transparent)),
+							  -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, #f2bc47), color-stop(.25, transparent), to(transparent)),
+							  -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.75, transparent), color-stop(.75, #f2bc47)),
+			  				  -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.75, transparent), color-stop(.75, #f2bc47));
+			background-image: -webkit-linear-gradient(45deg, #f2bc47 25%, transparent 25%, transparent),
+							  -webkit-linear-gradient(-45deg, #f2bc47 25%, transparent 25%, transparent),
+							  -webkit-linear-gradient(45deg, transparent 75%, #f2bc47 75%),
+			  				  -webkit-linear-gradient(-45deg, transparent 75%, #f2bc47 75%);
+			background-image: -moz-linear-gradient(45deg, #f2bc47 25%, transparent 25%, transparent),
+							  -moz-linear-gradient(-45deg, #f2bc47 25%, transparent 25%, transparent),
+							  -moz-linear-gradient(45deg, transparent 75%, #f2bc47 75%),
+			  				  -moz-linear-gradient(-45deg, transparent 75%, #f2bc47 75%);
+			background-image: -ms-linear-gradient(45deg, #f2bc47 25%, transparent 25%, transparent),
+							  -ms-linear-gradient(-45deg, #f2bc47 25%, transparent 25%, transparent),
+							  -ms-linear-gradient(45deg, transparent 75%, #f2bc47 75%),
+			  				  -ms-linear-gradient(-45deg, transparent 75%, #f2bc47 75%);
+			background-image: -o-linear-gradient(45deg, #f2bc47 25%, transparent 25%, transparent),
+							  -o-linear-gradient(-45deg, #f2bc47 25%, transparent 25%, transparent),
+							  -o-linear-gradient(45deg, transparent 75%, #f2bc47 75%),
+			  				  -o-linear-gradient(-45deg, transparent 75%, #f2bc47 75%);
+			background-image: linear-gradient(45deg, #f2bc47 25%, transparent 25%, transparent),
+							  linear-gradient(-45deg, #f2bc47 25%, transparent 25%, transparent),
+							  linear-gradient(45deg, transparent 75%, #f2bc47 75%),
+			  				  linear-gradient(-45deg, transparent 75%, #f2bc47 75%);  } 
+.tagcloud a:hover:after{    border-left-color: #f2bc47; }
+.food_menu_sticky nav li a.selected , .toggle_wrapper.style1:hover .toggle_container, #isotope-filter ul li a.active, #isotope-filter ul li a.active:hover, .toggle_wrapper.style2, .toggle_wrapper.style1 .toggle_container, .nav-tabs , .home-special-boxes-post-title-text:hover , h2.gallery-title:hover{ 	border-color:#f2bc47; } 
+a.readmore{ 	color:#ffffff; } 
+a.readmore:hover{ 	color:#000000; }
+a.readmore{ 	background:#ef7147; } a.readmore:before {     border-top-color: #ef7147; 	border-bottom-color: #ef7147; } a.readmore:after {  	border-left-color: #ef7147;  }
+a.readmore:hover{ 	background:#f2bc47; } a.readmore:hover:before{     border-top-color: #f2bc47; 	border-bottom-color: #f2bc47; } a.readmore:hover:after {  	border-left-color: #f2bc47;  }
+
+.footer_widgets{ 	background:#e4e1d6; } 
+.footer_widgets .tagcloud a, .footer_widgets .tagcloud a:hover { color:#e4e1d6; }
+.footer_widgets .food-menu-widget-thumbnail:after { 	border-bottom-color:#e4e1d6; }  
+.footer_widgets_before{ 
+		
+			 
+		background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, #e4e1d6), color-stop(.25, transparent), to(transparent)),
+							  -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, #e4e1d6), color-stop(.25, transparent), to(transparent)),
+							  -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.75, transparent), color-stop(.75, #e4e1d6)),
+			  				  -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.75, transparent), color-stop(.75, #e4e1d6));
+			background-image: -webkit-linear-gradient(45deg, #e4e1d6 25%, transparent 25%, transparent),
+							  -webkit-linear-gradient(-45deg, #e4e1d6 25%, transparent 25%, transparent),
+							  -webkit-linear-gradient(45deg, transparent 75%, #e4e1d6 75%),
+			  				  -webkit-linear-gradient(-45deg, transparent 75%, #e4e1d6 75%);
+			background-image: -moz-linear-gradient(45deg, #e4e1d6 25%, transparent 25%, transparent),
+							  -moz-linear-gradient(-45deg, #e4e1d6 25%, transparent 25%, transparent),
+							  -moz-linear-gradient(45deg, transparent 75%, #e4e1d6 75%),
+			  				  -moz-linear-gradient(-45deg, transparent 75%, #e4e1d6 75%);
+			background-image: -ms-linear-gradient(45deg, #e4e1d6 25%, transparent 25%, transparent),
+							  -ms-linear-gradient(-45deg, #e4e1d6 25%, transparent 25%, transparent),
+							  -ms-linear-gradient(45deg, transparent 75%, #e4e1d6 75%),
+			  				  -ms-linear-gradient(-45deg, transparent 75%, #e4e1d6 75%);
+			background-image: -o-linear-gradient(45deg, #e4e1d6 25%, transparent 25%, transparent),
+							  -o-linear-gradient(-45deg, #e4e1d6 25%, transparent 25%, transparent),
+							  -o-linear-gradient(45deg, transparent 75%, #e4e1d6 75%),
+			  				  -o-linear-gradient(-45deg, transparent 75%, #e4e1d6 75%);
+			background-image: linear-gradient(45deg, #e4e1d6 25%, transparent 25%, transparent),
+							  linear-gradient(-45deg, #e4e1d6 25%, transparent 25%, transparent),
+							  linear-gradient(45deg, transparent 75%, #e4e1d6 75%),
+			  				  linear-gradient(-45deg, transparent 75%, #e4e1d6 75%);  } 
+.footer_widgets h1, .footer_widgets h2, .footer_widgets h3, .footer_widgets h4, .footer_widgets h5, .footer_widgets h6, .footer_widgets .food-menu-widget-price-text ,.footer_widgets table#wp-calendar caption
+		{ 	color:#ef7147; }
+.footer_widgets .widget_title_ribbon, .footer_widgets .food-menu-widget-badge-icon, .footer_widgets .widget_search .input-append .add-on, .footer_widgets .food-menu-widget-money 
+		{ 	background:#ef7147; }
+.footer_widgets .widget_title_ribbon:after, .footer_widgets .food-menu-widget-badge-icon:before {     border-left-color:#ef7147; 	border-right-color:#ef7147; }
+.footer_widgets .food-menu-widget-money:after {  	border-left-color: #ef7147; }
+.footer_widgets .widget_search .input-append .add-on:before { 	border-right-color:#ef7147; }
+.footer_widgets i, .footer_widgets .AT_boxes_widget .teaser_icon_title a i { 	color:#e4e1d6; }
+.footer_widgets .footer_widget_col, .footer_widgets .home-food-badge, .footer_widgets .widget ul li, .footer_widgets .food-menu-widget-title, .footer_widgets .tweet-container { border-color:#b5b2a8; }
+.footer_widgets .widget_title_text{ 	color:#4b4b4b; }
+.footer_widgets, .footer_widgets p, .footer_widgets td{ 	color:#4b4b4b;	 }
+.footer_widgets a, .footer_widgets .widget ul li a i , .footer_widgets table#wp-calendar thead tr th{ 	color:#4b4b4b; } 
+		.footer_widgets .tagcloud a, .footer_widgets .teaser_icon_title{ 	background:#4b4b4b !important; } 
+		.footer_widgets .tagcloud a:after{     border-left-color: #4b4b4b; }
+.footer_widgets a:hover, .footer_widgets .widget ul li a:hover i{ 	color:#4b4b4b; } 
+		.footer_widgets .tagcloud a:hover ,.footer_widgets .teaser_icon_title:hover{ 	background:#4b4b4b !important; } 
+		.footer_widgets .tagcloud a:hover:after{     border-left-color: #4b4b4b; }
+.footer_copyright{ background-color:#f2bc47; } 
+		.footer_copyright_before {
+			 
+		background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, #f2bc47), color-stop(.25, transparent), to(transparent)),
+							  -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, #f2bc47), color-stop(.25, transparent), to(transparent)),
+							  -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.75, transparent), color-stop(.75, #f2bc47)),
+			  				  -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.75, transparent), color-stop(.75, #f2bc47));
+			background-image: -webkit-linear-gradient(45deg, #f2bc47 25%, transparent 25%, transparent),
+							  -webkit-linear-gradient(-45deg, #f2bc47 25%, transparent 25%, transparent),
+							  -webkit-linear-gradient(45deg, transparent 75%, #f2bc47 75%),
+			  				  -webkit-linear-gradient(-45deg, transparent 75%, #f2bc47 75%);
+			background-image: -moz-linear-gradient(45deg, #f2bc47 25%, transparent 25%, transparent),
+							  -moz-linear-gradient(-45deg, #f2bc47 25%, transparent 25%, transparent),
+							  -moz-linear-gradient(45deg, transparent 75%, #f2bc47 75%),
+			  				  -moz-linear-gradient(-45deg, transparent 75%, #f2bc47 75%);
+			background-image: -ms-linear-gradient(45deg, #f2bc47 25%, transparent 25%, transparent),
+							  -ms-linear-gradient(-45deg, #f2bc47 25%, transparent 25%, transparent),
+							  -ms-linear-gradient(45deg, transparent 75%, #f2bc47 75%),
+			  				  -ms-linear-gradient(-45deg, transparent 75%, #f2bc47 75%);
+			background-image: -o-linear-gradient(45deg, #f2bc47 25%, transparent 25%, transparent),
+							  -o-linear-gradient(-45deg, #f2bc47 25%, transparent 25%, transparent),
+							  -o-linear-gradient(45deg, transparent 75%, #f2bc47 75%),
+			  				  -o-linear-gradient(-45deg, transparent 75%, #f2bc47 75%);
+			background-image: linear-gradient(45deg, #f2bc47 25%, transparent 25%, transparent),
+							  linear-gradient(-45deg, #f2bc47 25%, transparent 25%, transparent),
+							  linear-gradient(45deg, transparent 75%, #f2bc47 75%),
+			  				  linear-gradient(-45deg, transparent 75%, #f2bc47 75%);  } 
+.footer_copyright, .footer_copyright p{ 	color:#4d4d4c;	 }
+.footer_copyright a{ 	color:#4d4d4c;	 }
+.footer_copyright a:hover{ 	color:#4d4d4c;	 }
+h1 { font-size: 1.6em; }
+h2 { font-size: 1.2em; }
+h3 { font-size: 0.96em ; }
+h4 { font-size: 0.8em; }
+h5 { font-size: 0.72em; }
+h6 { font-size: 0.64em; }
+h1.page_title_text, .post-meta-day{ font-size:2.08em; }
+h3.food_menu_catagory_name{ 	font-size:1.6em; }
+h2.post-content-title, .gallery-title, h2.post-title, h2.single-food-menu-title{ font-size:1.44em; }
+h3.single-food-menu-price-text, h3.single-food-menu-badge-text{ 	font-size:1.2em; }
+.post-meta-month, .food-menu-widget-price-text, .home_widgets h3.widget_title_text, .AT_boxes_widget h3.widget_title_text ,h3.home-food-title, .home-gallery-title
+		{ 	font-size:1.12em; }
+.home-special-boxes-post-title-text, .AT_fourboxes_widget h3.teaser_title, .flex-title, .ui-datepicker .ui-datepicker-title 
+		{ 	font-size:1.04em; }
+.post-meta-month, .food-menu-widget-price-text, .AT_home_food_widget .home-food-badge-text, .AT_home_food_widget .home-food-widget-price-text, h3.widget_title_text 
+		{ 	font-size:0.96em; }
+ .food-menu-widget-title-text, blockquote p, .pullquote, .blockquote, .food_menu_sticky nav li a,#isotope-filter ul li a
+		{ 	font-size:0.88em; }
+.accordion-heading, ul.nav-tabs.nav li a
+		{ 	font-size:0.8em; }
+.header_reservation a{ 	font-size:0.72em; }
+.wp-pagenavi a, .wp-pagenavi span, .food-menu-widget-recommended .food-menu-widget-title-text{ 	font-size:0.72em; }
+a.readmore{ 	font-size:0.64em; }

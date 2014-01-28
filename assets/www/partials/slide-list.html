@@ -1,0 +1,26 @@
+<ng:include src="'partials/header.html'"></ng:include>
+<div style="padding-top:55px;"><table class="table table-bordered">
+  <thead>
+  <tr>
+      <th>Id</th>
+    <th>Image</th>
+    <th>Title</th>
+      <th>Description</th>
+    <th></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr ng-repeat="s in allSlides">
+      <td>{{s._id}}</td>
+    <td><img src="{{ s.imgsrc || istore[s.doc_id]}}" class="thumb" /></td>
+      <td>{{s.name}}</td>
+    <td>{{s.description}}</td>
+    <td>
+      <a href="#/slideshow/{{s._id}}"><button type="button" class="btn btn-danger">edit</button></a>
+    </td>
+  </tr>
+  </tbody>
+</table>
+&nbsp;&nbsp;&nbsp;<a href="#/slideshow/new"><button type="submit" class="btn btn-primary save">Add New Picture Slide</button></a>
+            &nbsp;&nbsp;&nbsp;<a href="#" class="btn btn-warning" role="button">Exit</a>
+    </div>

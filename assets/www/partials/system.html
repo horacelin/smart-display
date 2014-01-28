@@ -1,0 +1,155 @@
+<ng:include src="'partials/header.html'"></ng:include>
+<div style="padding:10px 10px; background-color:#696969">
+    <div class="row" xmlns:ng="http://angularjs.org">
+
+    <form id="settingsForm" class="form-horizontal col-sm-12" ng-submit="saveSettings()">
+        <fieldset>
+            <legend>System Settings</legend>
+            <br/>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Click Button to Switch Mode:</label>
+                    <div class="col-sm-8 btn-group">
+                      <button type="button" ng-repeat="m in menuitem" class="btn btn-{{m.color}}" ng-click="changeDisplay($index)">{{m.name}}</button>
+                      
+                    </div>
+                        
+                    </div>
+                    <div class="form-group" ng-show="false">
+                        <label class="col-sm-2 control-label">Display:</label>
+
+                        <div class="col-sm-6">
+                            <select id="toDisp" name="toDisplay" class="form-control" ng-model="toDisplay" type="text">
+                            <option value="1">Slide Show</option>
+                            <option value="2">Restaurant Menu</option>
+                            <option value="3">Pending Orders</option>
+                            <option value="4">Video Show</option>
+                            <option value="5">Display Web Page</option>    
+                            </select>
+                        </div>
+                    </div>
+           
+            <div id="displaySlide" ng-show="toDisplay==1">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Slideshow Style:</label>
+                        <div class="col-sm-6">
+                            <select id="slideType" name="slideType" class="form-control" ng-model="slideType" type="text">
+                            <option value="slide">Slide In</option>
+                            <option value="fade">Fadding</option>
+                            </select>
+                            <span class="help-inline"></span>
+                        </div>
+                        </div>
+                        <div class="form-group">
+                        <label class="col-sm-2 control-label">Sliding Direction:</label>
+                        <div class="col-sm-6">
+                            <select id="slideDirection" name="slideDirection" class="form-control" ng-model="slideDirection" type="text">
+                            <option value="horizontal">Horizontal</option>
+                            <option value="vertical">Vertical</option>
+                            </select>
+                            <span class="help-inline"></span>
+                        </div>
+                            </div>
+                        <div class="form-group">
+                        <label class="col-sm-2 control-label">Duration:</label>
+                        <div class="col-sm-6">
+                            <select id="slideDuration" name="slideDuration" class="form-control" ng-model="slideDuration" type="text">
+                            <option value="4000">4 sec</option>
+                            <option value="8000">8 sec</option>
+                            <option value="15000">15 sec</option>
+                            <option value="30000">30 sec</option>
+                            </select>
+                            <span class="help-inline"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label"></label>
+                        <div class="col-sm-6">
+                            Slideshow mode auto play the pictures by sequence on full-screen with unlimited looping, user can swipe the screen to browse the pictures. A gentle touch on the screen will bring out the small gear icon on top which will allow administrator to go back to set-up page, therefore, a password is recommended when install the App to protect the settings from modifying by other people.<br><br><a href="#slideshow/edit" class="btn btn-danger" role="button">Click Here To Add/Edit Slideshow Contents</a>
+                            <span class="help-inline"></span>
+                        </div>
+                    </div>                
+</div>
+            
+            <div class="form-group" ng-show="toDisplay==5">
+                <label for="region" class="col-sm-2 control-label">Web URL:</label>
+                
+                <div class="col-sm-4">
+                    <input type="text" id="webUrl" name="webUrl" class="form-control" ng-model="webUrl"/>
+                </div>
+            </div> 
+                <div class="form-group" ng-show="toDisplay==5"><label class="col-sm-2 control-label"></label>
+                    <div class="col-sm-6">
+                            This Web Page mode will lock the kiosk to the web page you assign, it can function as a information center or used to submit the forms.
+                            <span class="help-inline"></span>
+                        </div>
+</div>
+            <div class="form-group" ng-show="toDisplay==4"><label class="col-sm-2 control-label"></label>
+                    <div class="col-sm-6">
+                            Videos will be played here with unlimited loop, the player will play at full-screen mode. <br><br><a href="#videoshow/edit" class="btn btn-danger" role="button">Add or Edit Videos here</a>
+                            <span class="help-inline"></span>
+                        </div>
+</div>
+            <div id="displayMenu" ng-show="toDisplay==2||toDisplay==3">
+                                <div class="form-group">
+                        <label for="name" class="col-sm-2 control-label">Server Address:</label>
+
+                        <div class="col-sm-6">
+                            <input type="text" id="server" class="form-control" name="server"  ng-model="server" required autofocus/>
+                            <span class="help-inline"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="grapes" class="col-sm-2 control-label">Database Name:</label>
+
+                        <div class="col-sm-6">
+                            <input type="text" id="db" name="db" class="form-control" ng-model="db"/>
+                            <span class="help-inline"></span>
+                        </div>
+                    </div>                   
+                            <div class="form-group" ng-show="toDisplay==2"><label class="col-sm-2 control-label"></label>
+                    <div class="col-sm-6">
+                            This Menu mode works with the POS IN CLOUD App, it retrieve the menu items from the POS server, customers can browse menu and place the order from the table.<br><br><a href="http://www.posincloud.com" class="btn btn-danger" role="button">Click Here Get More Info</a>
+                            <span class="help-inline"></span>
+                        </div>
+</div>
+
+            <div class="form-group" ng-show="toDisplay==3">
+                <label for="region" class="col-sm-2 control-label">Route#:</label>
+                
+                <div class="col-sm-4">
+                    <select type="text" id="routeid" name="routeid" class="form-control" ng-model="routeid">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            
+                    </select>
+                </div>
+            </div>
+                <div class="form-group" ng-show="toDisplay==3"><label class="col-sm-2 control-label"></label>
+                    <div class="col-sm-6">
+                            This Order Status mode works with the POS IN CLOUD App, it retrieve the pending orders status from the POS server, kitchen or bar can use this as the order display.<br><br><a href="http://www.posincloud.com" class="btn btn-danger" role="button">Click Here Get More Info</a>
+                            <span class="help-inline"></span>
+                        </div>
+</div>
+
+
+                    <br>
+                    <div class="row status-bar">
+                        
+                            <div class="alert alert-success hide" show-alert>
+                                <b>Success!</b> Settings saved successfully
+                            </div>
+                        </div>
+                   
+       </fieldset>
+        <div class="form-actions">
+            &nbsp;&nbsp;&nbsp;<button type="submit" class="btn btn-primary save">Save and Start to Play</button>
+            &nbsp;&nbsp;&nbsp;<a href="#" class="btn btn-warning" role="button">Cancel</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+    </form>
+</div>
+</div>
+

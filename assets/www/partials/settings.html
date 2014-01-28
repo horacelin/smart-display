@@ -1,0 +1,76 @@
+<ng:include src="'partials/header.html'"></ng:include>
+
+    <div class="row" xmlns:ng="http://angularjs.org">
+
+    <form id="settingsForm" class="form-horizontal col-sm-12" ng-submit="saveSettings()">
+        <fieldset>
+            <legend>Settings</legend>
+            <br/>
+
+                    <div class="form-group">
+                        <label for="wineId" class="col-sm-2 control-label">Token:</label>
+
+                        <div class="col-sm-6">
+                            <input id="token" name="token" class="form-control" ng-model="token" type="text" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name" class="col-sm-2 control-label">Server:</label>
+
+                        <div class="col-sm-6">
+                            <input type="text" id="server" class="form-control" name="server"  ng-model="server" required autofocus/>
+                            <span class="help-inline"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="grapes" class="col-sm-2 control-label">Database:</label>
+
+                        <div class="col-sm-6">
+                            <input type="text" id="db" name="db" class="form-control" ng-model="db"/>
+                            <span class="help-inline"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="country" class="col-sm-2 control-label">Name:</label>
+
+                        <div class="col-sm-6">
+                            <input type="text" id="storename" name="storename" class="form-control" ng-model="storename"/>
+                            <span class="help-inline"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="region" class="col-sm-2 control-label">ID:</label>
+
+                        <div class="col-sm-4">
+                            <input type="text" id="storeid" name="storeid" class="form-control" ng-model="storeid"/>
+                        </div>
+                    </div>
+            
+            <div class="form-group">
+                <label for="region" class="col-sm-2 control-label">Route:</label>
+                
+                <div class="col-sm-4">
+                    <input type="text" id="routeid" name="routeid" class="form-control" ng-model="routeid"/>
+                </div>
+            </div>
+            
+                    <br>
+                    <div class="row status-bar">
+                        
+                            <div class="alert alert-success hide" show-alert>
+                                <b>Success!</b> Settings saved successfully
+                            </div>
+                        </div>
+                   
+       </fieldset>
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary save">Save</button>
+            &nbsp;&nbsp;&nbsp;<a href="#" class="btn btn-warning" role="button">Cancel</a>
+        </div>
+    </form>
+</div>
+

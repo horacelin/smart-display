@@ -1,0 +1,24 @@
+<table class="table table-bordered">
+  <thead>
+  <tr>
+      <th>Id</th>
+    <th>Video</th>
+    <th>Title</th>
+      <th>Description</th>
+    <th></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr ng-repeat="v in videos">
+      <td>{{v._id}}</td>
+    <td></td>
+      <td>{{v.name}}</td>
+    <td>{{v.description}}</td>
+    <td>
+      <a href="#/videoshow/edit/{{v._id}}"><button type="button" class="btn btn-danger">edit</button></a>
+    </td>
+  </tr>
+  </tbody>
+</table>
+&nbsp;&nbsp;&nbsp;<a href="#/videoshow/new"><button type="submit" class="btn btn-primary save">New</button></a>
+            &nbsp;&nbsp;&nbsp;<a href="#" class="btn btn-warning" role="button">Exit</a>

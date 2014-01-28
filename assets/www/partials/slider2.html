@@ -1,0 +1,26 @@
+<div class="home_slider_container" ng-click="showStatus()">
+<div ng-show="showSetting" ng-click="requestSet()" style="position:absolute; width:40px; height:40px; left:48%; top:1%; z-index:99;"><img src="img/animated_gears.gif" width="40px"></div>
+<div class="flexslider">
+    
+  <ul class="slides">
+    
+        <li ng-repeat="s in allSlides"> 
+	        	
+        	<img width="100%" height="100%" src="{{s.imgsrc || istore[s.doc_id]}}" class="attachment-post-thumbnail wp-post-image" alt="{{s.name}}" />        	
+              <div class="flex-caption-wrap">
+        <div class="flex-caption">
+          <div class="flex-title">
+                  <a href="{{url}}">
+                      {{s.name}}                </a>
+                  </div>
+          <div class="flex-desc">
+            <p>{{s.description}}</p>
+          </div>
+        </div>
+      </div>
+         </li>
+
+       </ul>
+
+</div>
+</div>

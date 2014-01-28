@@ -1,0 +1,146 @@
+<!-- div id="content" class="container" -->
+ 
+<!-- ng:include src="'partials/header.html'"></ng:include -->
+<!--div class="home-hero">
+
+    <!-- h1 style="color:yellow;">EASY KIOSK</h1>
+    <h3 style="color:yellow;">Horace Lin</h3 -->
+<div style="background-image:url('img/wood.jpg'); background-size:cover;; background-repeat:no-repeat; padding:4% 10%;">
+<div id="at_stunning_text_widget-2" class="widget AT_stunning_text_widget">        
+    <div class="home-stunning-text-wrap">
+                                <div class="widget_title_ribbon"><img src="img/64x64.jpg" width="32px" /></div>
+                                <div class="home-stunning-text-area button-enable">
+                                    <h1 class="home-stunning-text-title">iPad Easy Kiosk Station Now Playing <div class="btn-group">
+  <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+    Slideshow<span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#slideshow">Slideshow</a></li>
+    <li><a href="#videoshow/1">Video</a></li>
+    <li><a href="#about">Web Page</a></li>
+    <li class="divider"></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#orders">Orders</a></li>
+  </ul>
+</div> </h1>
+                                    <div class="home-stunning-text-caption">The Easy Kiosk App can be configured to three different modes - slideshow, video, and web page. and order status. To lock this App running on the machine you will need to enable the "Guide Access" mode which will disable the HOME button. For more information click at <br />
+</div><!--home-stunning-text-caption--><br>
+                                    <button ng-hide="passRequest" type="button" ng-click="enterPass()" class="btn btn-{{pass_color}} btn-lg">
+  <span class="glyphicon glyphicon-lock"></span> {{pass_description}}
+</button>
+                                    <div class="row">
+  <div class="col-md-6" ng-show="passRequest">
+    <div class="input-group">
+      <input type="text" class="form-control" ng-model="pass">
+      <span class="input-group-btn">
+        <button class="btn btn-info" type="button" ng-click="updatePass()">Update</button>
+          <button class="btn btn-warning" type="button" ng-click="passRequest=false">Cancel</button>
+      </span>
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+                                </div><!--home-stunning-text-area button-enable-->
+                            </div><!--home-stunning-text-wrap--> 
+        
+        </div>		<div id="at_fourboxes_widget-3" class="widget AT_fourboxes_widget">            <div class="teaser_box_wrapper clearfix">
+            	<div class="row">
+                                            <div class="teaser_box col-md-3">
+                   
+                        	                            	<div style="display:block; vertical:middle; margin:0 auto; -webkit-border-radius:8px; border-radius:8px; width:72px; height:74px;">
+                                    <a href="#settings">
+                                        <img src="img/gears.gif" width="66px" alt="box1_icon" />
+                                    </a>
+                                </div><!--teaser_icon_title-->
+                                                        <h3 class="teaser_title">
+                            	<a href="#settings">Settings</a>
+                            </h3><!--teaser_title-->
+                            
+                            <div class="teaser_desc">
+                                switch display mode, update detail settings, enable menu, order status </div><!--teaser_desc-->
+                                                    </div><!--teaser_box-->
+                                                                     <div class="teaser_box col-md-3">
+                   <a href="#slideshow">
+                        	                            	<div style="display:block; vertical:middle; margin:0 auto; -webkit-border-radius:8px; border-radius:8px; width:128px; height:100px;">
+                                    <div class="home_slider_container">
+<div class="flexslider">
+  <ul class="slides">
+     <li ng-repeat="s in allSlides" style="padding:0">         	
+        	<img width="100%" height="100%" src="{{s.imgsrc}}" class="attachment-post-thumbnail wp-post-image" alt="{{s.name}}" />        
+         </li>
+       </ul>
+</div>
+</div>                    </div>   </a>                                               
+                            <h3 class="teaser_title">
+                            	<a href="#slideshow/edit">Slide Show</a>
+                            </h3><!--teaser_title-->
+                            
+                            <div class="teaser_desc">
+                                Edit the slide show content, upload pictures and description                            </div><!--teaser_desc-->
+                                                    </div><!--teaser_box-->
+                                                                     <div class="teaser_box col-md-3">
+                   <a href="#videoshow/1">
+                        	                            	<div style="display:block; vertical:middle; margin:0 auto; -webkit-border-radius:8px; border-radius:8px; width:128px; height:100px;">
+                                    <video id="demov" autoplay muted loop width="128" height="100">
+    <source type="video/mp4" src="video/J2.mp4">
+        
+</video>
+                                </div></a>
+                                                        <h3 class="teaser_title">
+                            	<a href="#videoshow/1">Videos</a>
+                            </h3><!--teaser_title-->
+                            
+                            <div class="teaser_desc">
+                                Edit and upload your videos here, mp4 format file                       </div><!--teaser_desc-->
+                                                    </div><!--teaser_box-->
+                    <div class="teaser_box col-md-3">
+                   
+                        	                            	<div class="teaser_icon_title">
+                                    <a href="#guideacc">
+                                        <img src="img/redlock72.png" width="64px" alt="box4_icon" />
+                                    </a>
+                                </div><!--teaser_icon_title-->
+                                                        <h3 class="teaser_title">
+                            	<a href="#guideacc">Guide Acess</a>
+                            </h3><!--teaser_title-->
+                            
+                            <div class="teaser_desc">
+                                Guide to lock the iPad to one App, disable the HOME button</div><!--teaser_desc-->
+                                                    </div><!--teaser_box-->
+                    <div class="teaser_box col-md-3">
+                   
+                        	                            	<div class="teaser_icon_title">
+                                    <a href="#">
+                                        <img src="img/order72.png" width="64px" alt="box4_icon" />
+                                    </a>
+                                </div><!--teaser_icon_title-->
+                                                        <h3 class="teaser_title">
+                            	<a href="#">Security Enclosures</a>
+                            </h3><!--teaser_title-->
+                            
+                            <div class="teaser_desc">
+                                Find the right security enclosure for you iPad kiosk system here</div><!--teaser_desc-->
+                                                    </div><!--teaser_box-->
+                                                                     <div class="teaser_box col-md-3">
+                   
+                        	                            	<div class="teaser_icon_title">
+                                    <a href="#">
+                                       <img src="img/look72.png" width="64px" alt="box4_icon" />
+                                    </a>
+                                </div><!--teaser_icon_title-->
+                                                        <h3 class="teaser_title">
+                            	<a href="#">About Us</a>
+                            </h3><!--teaser_title-->
+                            
+                            <div class="teaser_desc">
+                                POS IN CLOUD is the tablet-based POS and Kiosk solution provider  </div><!--teaser_desc-->
+                                                    </div><!--teaser_box-->
+                                                            </div><!--row-fluid-->
+           </div><!--teaser_box_wrapper-->
+         </div>		        		</div>
+        	</div>
+        </div><!--main_container_inner-->
+    <br/>
+    <br/>
+</div>
+
+</div>

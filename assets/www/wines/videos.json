@@ -1,0 +1,22 @@
+[
+{"_id":1,
+ "doc_id":"",
+ "type":0,
+ "name":"J3.mp4",
+ "description":"",
+ "src":[{"url":"video/J3.mp4","format":"mp4"}]
+},
+{"_id":2,
+ "doc_id":"",
+ "type":0,
+ "name":"food2014.mp4",
+ "description":"",
+ "src":[{"url":"video/food2014.mp4","format":"mp4"},{"url":"video/food2014.webm","format":"webm"}]
+},
+{"_id":3,
+ "doc_id":"",
+ "type":0,
+ "name":"cloudpos.mp4",
+ "description":"",
+ "src":[{"url":"video/cloudpos.mp4","format":"mp4"},{"url":"video/couldpos.webm","format":"webm"}]}
+]

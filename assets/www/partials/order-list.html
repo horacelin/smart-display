@@ -1,0 +1,35 @@
+<ng:include src="'partials/header.html'"></ng:include>
+<div style="padding-top:55px;">
+<div class="row" xmlns:ng="http://angularjs.org" >
+    <div id='itemlist' class="span12">
+        <div>
+            <ul>
+                <li class="img-thumbnail plain" style="text-align: center;" ng:repeat="order in orders | filter : search" >
+                    <a class="thumbnail" style="background-color:{{order.value.ordertype|orderTypeColor}};" href='#/orders/{{ order.value.no }}'>
+                       
+                        <h5>{{order.value.no}}</h5>
+                        <span class="glyphicon glyphicon-cutlery"></span> {{order.value.ordertype}}<br> {{order.value.table}}<br>
+                        {{order.value._id}}
+                    </a>
+                    <table style="width:100%;">
+                      <thead>
+                      <tr>
+                        <th style="width:20%">Qty</th>
+                        <th style="text-align:left;">Description</th>
+                        
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr ng-repeat="line in order.value.lines">
+                        <td>{{line.qty}}</td>
+                        <td style="text-align:left;">{{line.name}}</td>
+                        
+                      </tr>
+                      </tbody>
+                    </table>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+    </div>

@@ -1,0 +1,82 @@
+<div id="content" class="container">
+<div class="navbar navbar-inverse navbar-fixed-top" style="z-index: 10;">
+
+            <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+           
+            </div>
+            <nav class="collapse navbar-collapse bs-navbar-collapse">
+
+                <ul class="nav navbar-nav">
+                    <li  ng:repeat="cat in category" class="add-menu"><a href="#/menu/#chapter-{{$index}}">{{cat}}</a></li>
+                </ul>
+
+            </nav>
+            <!--/.nav-collapse -->
+        </div>
+
+<!-- div class="food_menu_sticky">
+      <div class="nav-container">
+          
+         <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+               <li ng:repeat="cat in category">
+                   <a href="#/menu/#chapter-{{$index}}">{{cat}}</a></li>
+            </ul>
+         </nav>
+      </div>
+   </div -->
+   <!--food_menu_sticky-->
+<div style="padding-top:60px;">
+    <div ng:repeat="cat in category">
+   <section id="chapter-{{$index}}">
+      <div class="food_menu_small_image_wrap">
+         <div class="food_menu_small_image_category_wrap">
+            <h3 class="food_menu_catagory_name">
+                {{cat}}
+            </h3>
+
+            <!--food_menu_small_image-->
+            <div class="food_menu_small_image clearfix"  ng:repeat="item in items | filter : { value.category: cat}" >
+               <div class="row-fluid">
+                  <div class="food_menu_small_image_thumbnail">
+                     <a href="#/items/{{ item.value.id }}">
+                     <img width="140" height="93" src="{{item.picurl|picexist}}" class="attachment-menu-thumb-4 wp-post-image" alt="Mack3-026" /> </a>
+                  </div>
+                  <div class="food_menu_small_image_badge">
+                     <div class="food-menu-widget-badge-icon
+                        no-image-icon ">
+                        <i class="icon-thumbs-up"></i>
+                     </div>
+                  </div>
+                  <div class="food_menu_small_image_name_desc
+                     single_price
+                     ">
+                     <div class="food_menu_small_image_name">
+                        <a href="http://demo.andthemes.com/dine-and-drink-2/menu/rum-cooked-prawns/">
+                        {{item.value.name|uppercase}}</a>
+                     </div>
+                     <div class="food_menu_small_image_desc">
+                        <p>{{item.value.description|capitalizeFirst}}</p>
+                     </div>
+                  </div>
+                  <!--food_menu_small_image_name_desc-->
+                  <div class="food_menu_small_image_price single_price" >
+                     {{item.value.price|currency}}<br />
+                  </div>
+                  <!--food_menu_small_image_price-->
+               </div>
+               <!--row-fluid-->
+            </div>
+            <!--food_menu_small_image-->
+         </div>
+         <!--food_menu_small_image_category_wrap-->
+      </div>
+   </section>
+    </div></div>
+    </div>

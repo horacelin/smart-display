@@ -1,0 +1,16 @@
+<ng:include src="'partials/header.html'"></ng:include>
+<div class="row-fluid" xmlns:ng="http://angularjs.org" >
+    <div id='content' class="span12">
+        <div>
+            <ul>
+                <li class="img-thumbnail plain" style="text-align: center;" ng:repeat="wine in wines | orderBy:'name'" >
+                    <a class="thumbnail" href='#/wines/{{ wine._id }}'>
+                        <img src="pics/{{wine.picture!=null&&wine.picture||default_pic}}" height="150" width="125"/>
+                        <h5>{{wine.name|uppercase}}</h5>
+                        <i class="icon-globe"></i> {{wine.region|capitalizeFirst}}, {{wine.country|uppercase}}
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

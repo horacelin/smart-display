@@ -1,0 +1,42 @@
+[
+    {
+        "_id": 1,
+        "name": "CHATEAU DE SAINT COSME",
+        "img": "SW003.jpeg",
+        "type": 0,
+        "doc_id":"",
+        "imgsrc": "img/SW003.jpeg",
+        "url": "#/items/001",
+        "description": "$59 for lunch set 10am.-13pm. everyday. 15 April – 15 June 2013"
+    },
+    {
+        "_id": 2,
+        "name": "hTC One 2模型",
+        "img": "SW091.jpeg",
+        "type": 0,
+        "doc_id":"",
+        "imgsrc": "img/SW091.jpeg",
+        "url": "#/items/002",
+        "description": "傳聞規格是5吋高畫質屏幕，加入HTC One Max的指紋鎖，會有1000萬像素的Ultra Pixel鏡頭"
+    },
+    {
+        "_id": 3,
+        "name": "Penne Promotion! ",
+        "img": "SW166.jpeg",
+        "type": 0,
+        "doc_id":"",
+        "imgsrc": "img/SW166.jpeg",
+        "url": "#",
+        "description": "HIJ IS ER WEER: HET SUSHI AKITA MENU MET MAAR LIEFST 54 STUKS VOOR MAAR € 29,95,"
+    },
+    {
+        "_id": 4,
+        "name": "Drink, Food, Men, Women",
+        "img": "SW195.jpeg",
+        "type": 0,
+        "doc_id":"",
+        "imgsrc": "img/SW195.jpeg",
+        "url": "#",
+        "description": "San Diego, California | ABV: 6.0% American style pale ale with slight hops & aromas of citrus, floral, & touch of pine"
+    }
+]
