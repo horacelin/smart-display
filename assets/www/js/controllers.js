@@ -1,7 +1,7 @@
 function Init($scope,$rootScope,$cookieStore,SlideService, VideoService){
     $rootScope.db = new PouchDB('mydb');
     if(!$rootScope.settings){
-    //    var settings = $cookieStore.get("settings");
+    
         var settings = localStorage.getItem("settings");
         if (typeof settings === "undefined" || settings === null || settings === "") {
             settings = {
@@ -18,7 +18,7 @@ function Init($scope,$rootScope,$cookieStore,SlideService, VideoService){
             localStorage.setItem("pass", "");
         }
     }
-        //var settings = JSON.parse($cookieStore.get("settings"));
+        
         settings = JSON.parse(localStorage.getItem("settings"));
         $rootScope.server = settings.server;
         $rootScope.database = settings.database;
@@ -70,7 +70,7 @@ function Init($scope,$rootScope,$cookieStore,SlideService, VideoService){
     $scope.pass=$rootScope.pass;
     $scope.passRequest = false;
     if($rootScope.pass === ""){
-        $scope.pass_description = "Please Create A Password to protect this Kiosk!";
+        $scope.pass_description = "Create A Password!";
         $scope.pass_color = "danger";
     } else {
         $scope.pass_description = "Change Password Here!";
