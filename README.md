@@ -4,7 +4,9 @@ An Android Hybrid App for user to upoad photos or videos and to display full-scr
 <ul>
 <li>AngularJS 1.29
 <li>jQuery 1.9.1 (only to support jquery.flexslider.js for slideshow)
-<li>bootstrap 3.0
-<li>pouchDB 1.1.0 (for offline images videos storage)
-<li>phoneGap 3.0
+<li>Bootstrap 3.0
+<li>PouchDB 1.1.0 (for offline images videos storage)
+<li>PhoneGap 3.0 (Cordova)
 </ul>
+<br>
+A old version of webapp can be seen at <a href="http://maps.auctions411.com/android/assets/www/index.html">here</a>
