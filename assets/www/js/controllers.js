@@ -30,7 +30,7 @@ function Init($scope,$rootScope,$cookieStore,SlideService, VideoService){
         $rootScope.pass = typeof localStorage.pass !== "undefined" ? localStorage.pass : "";
         $rootScope.debug = 1;   //
     
-    if (!$rootScope.allSlides){
+    //if (!$rootScope.allSlides){
         if(!localStorage.slides){
         SlideService.query(function (response) { if (response!=null) {
             $rootScope.allSlides=response;
@@ -62,7 +62,7 @@ function Init($scope,$rootScope,$cookieStore,SlideService, VideoService){
                 }
             }
         }
-    }
+    //}
     $scope.allSlides=$rootScope.allSlides;
     
     setTimeout(function(){loadSlides(settings);},3000); 
@@ -202,7 +202,7 @@ function loadAbout($scope, $rootScope, $sce){
 }
 
 function MenuListCtrl($scope, $rootScope, $http){
-    $scope.default_pic = "img/logo.png";
+    $scope.default_pic = "generic.jpg";
 
     var addr = $rootScope.server + $rootScope.database;
     if ($rootScope.debug === 1) {
@@ -245,14 +245,14 @@ function MenuListCtrl($scope, $rootScope, $http){
 }
 
 function WineListCtrl($scope,WineService,$rootScope) {
-    $scope.default_pic = "img/logo.png";
+    $scope.default_pic = "generic.jpg";
     // Managing in-memory array so don't reset it if the JSON has already been retrieved initially
     if (!$rootScope.wines)
         WineService.query(function (response) { if (response!=null) {$rootScope.wines=response}});
 }
 
 function ItemListCtrl($scope,$http,ItemService,$rootScope) {
-    $scope.default_pic = "img/logo.png";
+    $scope.default_pic = "generic.jpg";
     /*
     if (!$rootScope.items)
         ItemService.query(function (response) { if (response!=null) {
@@ -361,7 +361,7 @@ function CustListCtrl($scope,$http,$rootScope) {
 }
 
 function SlideShow($scope, SlideService, $rootScope, $location){
-    if (!$rootScope.allSlides){
+    //if (!$rootScope.allSlides){
         if(!localStorage.slides){
         SlideService.query(function (response) { if (response!=null) {
             $rootScope.allSlides=response;
@@ -371,7 +371,7 @@ function SlideShow($scope, SlideService, $rootScope, $location){
         } else {
             $rootScope.allSlides=JSON.parse(localStorage.slides);
         }
-    }
+    //}
     $scope.istore = $rootScope.imgstore;
     $scope.showSetting = false;
     $scope.allSlides=$rootScope.allSlides;
@@ -396,7 +396,7 @@ function SlideShow($scope, SlideService, $rootScope, $location){
     }
 }
 
-function SlideDetails($scope, SlideService, $rootScope,$routeParams){
+function SlideDetails($scope, SlideService, $rootScope,$routeParams,$location){
     if ($rootScope.allSlides){
         $scope.slide = filterById($rootScope.allSlides, $routeParams.slideId);
         $scope.ImgSrc = $scope.slide.type === 1 ? $rootScope.imgstore[$scope.slide.doc_id] : $scope.slide.imgsrc;
@@ -408,10 +408,7 @@ function SlideDetails($scope, SlideService, $rootScope,$routeParams){
          var reader = new FileReader();
          reader.onload = (function(theFile) {
             return function(e){
-                var span = document.createElement('span');
-                span.innerHTML = ['<img class="thumb" src="', e.target.result,
-                            '" title="', escape(theFile.name), '"/>'].join('');
-                document.getElementById('list').insertBefore(span, null);
+            	$scope.ImgSrc = e.target.result;
                 localStorage.setItem(theFile.name,e.target.result);
                 $rootScope.img1 = e.target.result;
          };
@@ -438,6 +435,9 @@ function SlideDetails($scope, SlideService, $rootScope,$routeParams){
         }
         $rootScope.allSlides = $scope.allSlides;
         localStorage.setItem("slides",JSON.stringify($rootScope.allSlides));
+        //alert("deleted!");
+        $location.path("/slideshow/edit");
+        if(!$scope.$$phase) $scope.$apply();
     }
     
     function filterById(wines, id){return wines.filter(function(wines) {return (wines['_id'] == id);})[0];}
@@ -451,19 +451,17 @@ function SlideNew($scope, $rootScope, $location){
     $scope.slide.name = "";
     $scope.slide.description="";
     $scope.slide.imgsrc="";
-    $scope.slide.type = 1;
-    
-    $scope.file_changed = function(element, $scope){       
+    $scope.slide.type = 0;
+
+        $scope.file_changed = function(element){
          var photofile = element.files[0];
          var reader = new FileReader();
          reader.onload = (function(theFile) {
             return function(e){
-                var span = document.createElement('span');
-                span.innerHTML = ['<img class="thumb" src="', e.target.result,
-                            '" title="', escape(theFile.name), '"/>'].join('');
-                document.getElementById('list').insertBefore(span, null);
+                $scope.ImgSrc = e.target.result;
                 $rootScope.imgsrc = e.target.result;
                 $rootScope.imgName = theFile.name;
+                $scope.slide.type = 1;
          };
          })(photofile);
          reader.readAsDataURL(photofile);
@@ -488,6 +486,7 @@ function SlideNew($scope, $rootScope, $location){
                         $scope.showFlag = true;
                         $rootScope.imgstore[$scope.slide.doc_id] = $rootScope.imgsrc;
                         $location.path("/slideshow/edit");
+                        if(!$scope.$$phase) $scope.$apply();
                     }
                 });
         }
@@ -511,8 +510,8 @@ function SlideNew($scope, $rootScope, $location){
     }
 }
 
-function SlideEdit($scope, SlideService, $rootScope){
-    if (!$rootScope.allSlides){
+function SlideEdit($scope, SlideService, $rootScope, $location){
+    //if (!$rootScope.allSlides){
         if(!localStorage.slides){
         SlideService.query(function (response) { if (response!=null) {
             $rootScope.allSlides=response;
@@ -522,13 +521,13 @@ function SlideEdit($scope, SlideService, $rootScope){
         } else {
             $rootScope.allSlides=JSON.parse(localStorage.slides);
         }
-    }
+    //}
     $scope.slides = $rootScope.allSlides;
     $scope.istore = $rootScope.imgstore;
 }
 
 function VideoEdit($scope, VideoService, $rootScope){
-    if (!$rootScope.videos){
+    
         if(!localStorage.videos){
         VideoService.query(function (response) { if (response!=null) {
             $rootScope.videos=response;
@@ -538,18 +537,18 @@ function VideoEdit($scope, VideoService, $rootScope){
         } else {
             $rootScope.videos=JSON.parse(localStorage.videos);
         }
-    }
+   
     $scope.videos = $rootScope.videos;
 }
 
 function videoShow($scope, $rootScope, $location){
-    if (!$rootScope.videos){
+    
         $rootScope.videos=[{type:"webm",
                             url:"video/restaurant.webm"},
                            {type:"mp4",
                             url:"video/cloudpos.mp4"}
                           ];
-    } 
+    
         $scope.videos = $rootScope.videos;
     $scope.showSetting = false;
     addSwipeListener(document.getElementById("vd"),function(e) {
@@ -570,7 +569,7 @@ function videoShow($scope, $rootScope, $location){
 
 function videoShow2($scope, $rootScope, $location, $routeParams, VideoService){
     $rootScope.db = new PouchDB('mydb');
-    if (!$rootScope.videos){
+    
         if(!localStorage.videos){
         VideoService.query(function (response) { if (response!=null) {
             $rootScope.videos=response;
@@ -582,16 +581,12 @@ function videoShow2($scope, $rootScope, $location, $routeParams, VideoService){
             $rootScope.videos=JSON.parse(localStorage.videos);
             playVideo();
         }
-    } else playVideo();
-/*
+  
+
     setTimeout(function(){
         var tp = document.getElementById("vd2");
-        var tmpurl="";
-        for(i=0; i<$rootScope.videos[0].src.length; i++){
-            tmpurl += '<source type="video/' + $rootScope.videos[0].src[i].format + '" src="' + $rootScope.videos[0].src[i].url + '" />';
-        }
-        tp.innerHTML = tmpurl;
-    },1500);	*/
+        tp.innerHTML = '<source type="video/mp4" src="' + $rootScope.videos[0].url + '" />';
+    },1500);
     
     $scope.showStatus = function(){
         $scope.showSetting = !$scope.showSetting;
@@ -658,7 +653,7 @@ function videoShow2($scope, $rootScope, $location, $routeParams, VideoService){
     }
 }
 
-function VideoDetails($scope, VideoService, $rootScope,$routeParams){
+function VideoDetails($scope, VideoService, $rootScope,$routeParams,$location){
     if ($rootScope.videos){
         $scope.video = filterById($rootScope.videos, $routeParams.videoId);
     }
@@ -699,13 +694,15 @@ function VideoDetails($scope, VideoService, $rootScope,$routeParams){
         }
         $rootScope.videos = $scope.videos;
         localStorage.setItem("videos",JSON.stringify($rootScope.videos));
+        $location.path("/videoshow/edit");
+        if(!$scope.$$phase) $scope.$apply();
     }
     
     function filterById(wines, id){return wines.filter(function(wines) {return (wines['_id'] == id);})[0];}
     
 }
 
-function VideoNew($scope, $rootScope){
+function VideoNew($scope, $rootScope,$location){
     var couch = new PouchDB('mydb');
     $scope.video = {};
     $scope.video._id = $rootScope.videos.length+1;
@@ -723,17 +720,17 @@ function VideoNew($scope, $rootScope){
          reader.onload = (function(theFile) {
             return function(e){
                 var span = document.createElement('span');
-                span.innerHTML = ['<video width="240" controls src="', e.target.result,
+              /*  span.innerHTML = ['<video width="240" controls src="', e.target.result,
                             '" title="', escape(theFile.name), '"/>'].join('');
-                document.getElementById('list').insertBefore(span, null);
+                document.getElementById('list').insertBefore(span, null); */
                // localStorage.setItem(theFile.name,e.target.result);
-                
+                span.innerHTML = "done";
                 $rootScope.videoName = theFile.name;
                 $rootScope.videoFile = e.target.result;
+                $scope.video.type = 1;
          };
          })(videofile);
          reader.readAsDataURL(videofile);
-     
     };
     
     $scope.saveVideo = function () {
@@ -755,9 +752,8 @@ function VideoNew($scope, $rootScope){
                         localStorage.setItem("videos",JSON.stringify($rootScope.videos));
                         //$rootScope.vsrc[$scope.video.doc_id] = $rootScope.videos;
                         $scope.showFlag = true;
-                        var span = document.createElement('span');
-                        span.innerHTML = '<h2> ... DONE ... </h2>';
-                        document.getElementById('list').insertBefore(span, null);
+                        $location.path("/videoshow/edit");
+                        if(!$scope.$$phase) $scope.$apply();
                     }
                 });
     }

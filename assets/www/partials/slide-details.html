@@ -1,15 +1,13 @@
 <ng:include src="'partials/header.html'"></ng:include>
-<div style="background-color:#909045">
+<div style="padding:50px 5px 5px 5px; background-color:#909045">
 <div class="row" xmlns:ng="http://angularjs.org">
 
     <form id="slideForm" class="form-horizontal col-md-12" ng-submit="saveSlide()">
         <fieldset>
-            <legend>Slide Details</legend>
-            <br/>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-8">
                     <div class="form-group">
-                        <label for="slideId" class="col-md-4 control-label">Id:</label>
+                       
 
                         <div class="col-md-8">
                             <input id="slideId" name="slideId" class="form-control" ng-model="slide._id" type="text" disabled/>
@@ -17,32 +15,37 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="name" class="col-md-4 control-label">Title:</label>
-
                         <div class="col-md-8">
-                            <input type="text" id="slideName" class="form-control" name="slideName"  ng-model="slide.name"  autofocus/>
+                            <input placeholder="title of picture (option)" type="text" id="slideName" class="form-control" name="slideName"  ng-model="slide.name"  />
                             <span class="help-inline"></span>
                         </div>
                     </div>
 
-                    <div class="form-group">
-                        <label for="description" class="col-md-4 control-label">Description:</label>
-
+                    <div class="form-group"> 
                         <div class="col-md-8">
-                            <textarea id="slideDescription" name="slideDescription" class="form-control" ng-model="slide.description"  rows="6"></textarea>
+                            <textarea placeholder="descriptin of picture(option)" id="slideDescription" name="slideDescription" class="form-control" ng-model="slide.description"  rows="4"></textarea>
                         </div>
-                    </div>
-                   </div>                                                                                             
-                <div class="col-md-8">
-                    <div class="well" style="width: 180px;text-align: center;width:50%;margin: 0px auto;">
-                        <p><img id="picture" width="180" src="{{ImgSrc}}"  onerror="this.src='img/logo.png'" ng-model="slide.img"/></p>
-                        <p style="color:#999;">Best resolution for Landscape mode is 1024(width) x 768(height), and 768(width) x 1024(height) for Portrait mode. To change the picture, click at the button below.</p>
+                    </div>  
+                        <div class="form-group" ng-hide="{{slide.type}}">
+                        <div class="col-md-8">
+                            <input placeholder="URL of the picture" type="text" id="slideUrl" class="form-control" name="slideUrl"  ng-model="slide.imgsrc" ng-change="ImgSrc=slide.imgsrc" />
+                            <span class="help-inline"></span>
+                        </div>
+                    </div><div class="form-group">
+                        
+                        <div class="col-md-8"> 
+                    <div class="well" style="width: 100%;text-align: margin: 0px auto;">
+                        
+                        <p style="color:#999;">Best resolution for Landscape mode is 1024(width) x 768(height), and 768(width) x 1024(height) for Portrait mode. <br>If you want to use the App offline, then select uploading the picture by clicking at the button below.</p>
  <input ng-model="files" onchange="angular.element(this).scope().file_changed(this)" type="file" accept="image/*" />
+                        <p><img id="picture" width="180" src="{{ImgSrc}}"  onerror="this.src='img/logo.png'" ng-model="slide.img"/></p>
 <output id="list"></output>
-                        <br>
-                        <div id="dropboxfile"></div>
                     </div>
-                    <br>
+                                    <div class="form-actions">
+            &nbsp;&nbsp;&nbsp;<button type="submit" class="btn btn-primary save">Save</button>
+            &nbsp;&nbsp;&nbsp;<a href="#/slideshow/edit" class="btn btn-warning" role="button">Cancel</a>
+            &nbsp;&nbsp;&nbsp;<a href="#/slideshow/edit" class="btn btn-danger delete" ng:click="deleteSlide(slide)" ng-show="slide._id!=undefined">Delete</a>
+        </div>
                     <div class="row status-bar">
                         <div class="col-md-12">
                             <div class="alert alert-success hide" show-alert>
@@ -53,11 +56,7 @@
                 </div>
            </div>
        </fieldset>
-        <div class="form-actions">
-            &nbsp;&nbsp;&nbsp;<button type="submit" class="btn btn-primary save">Save</button>
-            &nbsp;&nbsp;&nbsp;<a href="#/slideshow/edit" class="btn btn-warning" role="button">Cancel</a>
-            &nbsp;&nbsp;&nbsp;<a href="#/slideshow/edit" class="btn btn-danger delete" ng:click="deleteSlide(slide)" ng-show="slide._id!=undefined">Delete</a>
-        </div>
+
     </form>
 </div>
 </div>
